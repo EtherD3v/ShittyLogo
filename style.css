@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: #0C02FA;
+  --secondary: #FB0206;
+  --discord: #92A4E2;
+  --background: #F4F3FB;
+  --text: #000;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Montserrat", system-ui, sans-serif;
+}
+
+h1 {
+  --_stripe-width: .6rem;
+  position: relative;
+  font-family: "Montserrat Alternates";
+  user-select: none;
+  margin: 9rem 0;
+  font-size: 5rem;
+  position: relative;
+  padding: 0 1rem;
+  overflow: clip;
+  display: grid;
+  grid-template-columns: 0fr;
+  min-width: 0;
+  /* animation: title-show .7s ease-out both; */
+  transition: grid-template-columns .5s ease-out;
+  text-align: center;
+}
+
+@keyframes title-show {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1:hover {
+  grid-template-columns: 1fr;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary);
+  height: 100%;
+  width: var(--_stripe-width);
+  z-index: 1;
+}
+
+h1::after {
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: var(--secondary);
+  height: 100%;
+  width: var(--_stripe-width);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+#search {
+  font-family: "Montserrat", system-ui, sans-serif;
+  top: 3rem;
+  position: sticky;
+  font-size: 1.3rem;
+  padding: .2rem .8rem;
+  background: var(--background);
+  color: var(--text);
+  border: solid .2rem var(--text);
+  border-radius: 100vw;
+  margin-bottom: 3rem;
+  width: clamp(20rem, 80%, 37rem);
+  box-shadow: .4rem .4rem hsla(244, 12%, 45%, 0.4);
+}
+
+.join-discord {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;
+  padding: .7rem .1rem;
+  background: var(--discord);
+  color: var(--text);
+  fill: var(--text);
+  box-shadow: .4rem .4rem hsla(227, 58%, 65%, 0.4);
+  border-radius: 100vw;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .7rem;
+  overflow: hidden;
+}
+
+.discord-icon, .arrow, .join-discord > label {
+  --_color: var(--text);
+  transition: transform 150ms ease-out;
+}
+
+.join-discord > .discord-icon {
+  transform: translateX(1.2rem);
+}
+
+.join-discord > label {
+  transform: translateX(1.2rem);
+}
+
+.join-discord > .arrow {
+  transform: translateX(5rem);
+}
+
+.join-discord:hover > .arrow {
+  transform: translateX(-1.2rem);
+}
+
+.join-discord:hover > label {
+  transform: translateX(-1.2rem);
+}
+
+.join-discord:hover > .discord-icon {
+  transform: translateX(-5rem);
+}
+
+main {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+}
+
+figure > img {
+  width: 100%;
+  height: 100%;
+  transition: transform 100ms ease-out;
+}
+
+figure:hover > img {
+  transform: scale(0.8);
+}
+
+figcaption {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figcaption > label {
+  --_banner-height: 3rem;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.top {
+  width: 100%;
+  height: var(--_banner-height);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.left {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--_banner-height);
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+}
+
+.right > img {
+  width: 1.7rem;
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+
+.right {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  writing-mode: vertical-lr;
+  width: var(--_banner-height);
+}
+
+footer {
+  margin-top: 9rem;
+  border-top: dashed #989898 .3rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+  color: var(--text);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-link > svg {
+  height: 1.3rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #817DE8;
+    --secondary: #E87D7F;
+    --discord: #516ED1;
+    --background: #100F24;
+    --text: #ededed;
+  }
+
+  #search {
+    border-color: #676580;
+  }
+}
