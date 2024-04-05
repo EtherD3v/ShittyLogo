@@ -9,6 +9,9 @@
   --discord: #92A4E2;
   --background: #F4F3FB;
   --text: #000;
+  --font-title: clamp(2rem, 12vw, 5rem);
+  --font-button: clamp(1rem, calc(12vw - 1.7rem), 1.3rem);
+  --font-text: clamp(.9rem, calc(12vw - 6.5rem), 1.4rem);
 }
 
 body {
@@ -18,14 +21,14 @@ body {
 }
 
 h1 {
-  --_stripe-width: .6rem;
+  --_stripe-width: 2.5%;
   position: relative;
   font-family: "Montserrat Alternates";
   user-select: none;
   margin: 9rem 0;
-  font-size: 5rem;
+  font-size: var(--font-title);
   position: relative;
-  padding: 0 1rem;
+  padding: 0 .3em;
   overflow: clip;
   display: grid;
   grid-template-columns: 0fr;
@@ -82,21 +85,22 @@ header {
   font-family: "Montserrat", system-ui, sans-serif;
   top: 3rem;
   position: sticky;
-  font-size: 1.3rem;
+  font-size: var(--font-button);
   padding: .2rem .8rem;
   background: var(--background);
   color: var(--text);
   border: solid .2rem var(--text);
   border-radius: 100vw;
   margin-bottom: 3rem;
-  width: clamp(20rem, 80%, 37rem);
+  width: clamp(15rem, 80%, 37rem);
   box-shadow: .4rem .4rem hsla(244, 12%, 45%, 0.4);
 }
 
 .join-discord {
   position: absolute;
-  top: 1.7rem;
-  right: 1.7rem;
+  top: 0;
+  right: 0;
+  margin: 1.7rem;
   padding: .7rem .1rem;
   background: var(--discord);
   color: var(--text);
@@ -109,6 +113,7 @@ header {
   align-items: center;
   gap: .7rem;
   overflow: hidden;
+  font-size: var(--font-button);
 }
 
 .discord-icon, .arrow, .join-discord > label {
@@ -146,7 +151,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 50rem) {
   main {
     grid-template-columns: 1fr;
   }
@@ -178,7 +183,7 @@ figcaption {
 
 figcaption > label {
   --_banner-height: 3rem;
-  font-size: 1.4rem;
+  font-size: var(--font-text);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +238,7 @@ footer {
   align-items: center;
   gap: .2rem;
   color: var(--text);
-  font-size: 1rem;
+  font-size: var(--font-text);
   text-decoration: none;
 }
 
