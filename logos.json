@@ -1,0 +1,20 @@
+[
+  {
+    "img": "./assets/michromzilla.jpg",
+    "name": "MichromZilla v1",
+    "contributor": "EtherD3v",
+    "date": "27 janvier 2024"
+  },
+  {
+    "img": "./assets/edge_explorer.jpg",
+    "name": "Edge Explorer",
+    "contributor": "EaterUsr",
+    "date": "26 janvier 2024"
+  },
+  {
+    "img": "./assets/figma_adobe.jpg",
+    "name": "Figma from adobe",
+    "contributor": "EaterUsr",
+    "date": "18 janvier 2024"
+  }
+]
