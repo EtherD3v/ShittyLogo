@@ -11,7 +11,7 @@ function filter(query, logos) {
   const searchText = query.toLowerCase();
 
   logoContainer.innerHTML = logos
-    .filter(logo => logo.name.includes(searchText))
+    .filter(logo => logo.name.toLowerCase().includes(searchText))
     .map(logo => logoComponent(logo))
     .join("");
 }
@@ -32,6 +32,8 @@ function logoComponent(logo) {
 async function getLogos() {
   const response = await fetch("./logos.json");
   const logos = await response.json()
+
+  filter("", logos);
 
   searchInput.addEventListener("input", () => {
     filter(searchInput.value, logos)

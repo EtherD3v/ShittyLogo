@@ -16,5 +16,23 @@
     "name": "Figma from adobe",
     "contributor": "EaterUsr",
     "date": "18 janvier 2024"
+  },
+  {
+    "img": "./assets/apple.jpg",
+    "name": "Apple = Poop",
+    "contributor": "EaterUsr",
+    "date": "15 janvier 2024"
+  },
+  {
+    "img": "./assets/frandroid.jpg",
+    "name": "Frandroid",
+    "contributor": "EtherD3v",
+    "date": "18 janvier 2024"
+  },
+  {
+    "img": "./assets/ShittyLogo.jpg",
+    "name": "ShittyLogo",
+    "contributor": "EtherD3v",
+    "date": "18 janvier 2024"
   }
 ]
