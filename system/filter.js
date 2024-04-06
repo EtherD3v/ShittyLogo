@@ -18,11 +18,11 @@ function filter(query, logos) {
 
 function logoComponent(logo) {
   return `
-    <figure>
+    <figure class="${logo.style}">
       <img src="${logo.img}">
       <figcaption>
         <label class="top">${logo.name}</label>
-        <label class="right"><img src="./assets/contributors/${logo.contributor}.png" alt="${logo.contributor}">${logo.contributor}</label>
+        <label class="right"><img src="./assets/contributors/${logo.contributor}.jpeg" alt="${logo.contributor}">${logo.contributor}</label>
         <label class="left">${logo.date}</label>
       </figcaption>
     </figure>
