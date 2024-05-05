@@ -168,12 +168,12 @@ figure > img {
   transition: transform 100ms ease-out;
 }
 
-figure:hover > img {
-  transform: scale(0.8);
+figure.mirror > img {
+  -webkit-box-reflect: below 0 linear-gradient(rgb(0 0 0 / 0.1) 0, rgb(0 0 0 / 0.1) calc(100% - 4rem), white 100%);
 }
 
-figure.mirror > img {
-  -webkit-box-reflect: below 0 linear-gradient(rgb(0 0 0 / 0.1), 5rem white);
+figure:hover > img {
+  transform: scale(0.8);
 }
 
 figcaption {
