@@ -4,3 +4,7 @@ To clone the repository :
 ```
 git clone https://github.com/EtherD3v/ShittyLogo.git
 ```
+.. and see an overview (with npm): 
+```
+npm run dev
+```
