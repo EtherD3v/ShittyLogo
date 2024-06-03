@@ -1,4 +1,11 @@
 [
+   {
+    "img": "./assets/MetaVidia.jpg",
+    "name": "MetaVidia",
+    "contributor": "EtherD3v",
+    "date": "2 juin 2024",
+    "style": "blur"
+  },
   {
     "img": "./assets/unowhy.jpg",
     "name": "Unowhy",
