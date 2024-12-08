@@ -1,5 +1,17 @@
 [
-   {
+   {                                                                   "img": "./assets/HashIBM.jpg",                                    "name": "Apple = Poop",
+     "contributor": "EtherD3v",
+     "date": "8 décembre 2024",
+     "style": "shadow"
+   },
+
+   {                                                                   "img": "./assets/BeReal_Simulator_.jpg",
+     "name": "BeReal Simulator",                                       "contributor": "EaterUsr",
+     "date": "? 2024",
+     "style": "mirror"                                               },
+
+
+  {
     "img": "./assets/MetaVidia.jpg",
     "name": "MetaVidia",
     "contributor": "EtherD3v",
