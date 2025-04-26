@@ -1,4 +1,11 @@
-[
+[  
+    {                                                                   
+     "img": "./assets/Goowiz.jpg",                                    
+     "name": "Goowiz",
+     "contributor": "EtherD3v",
+     "date": "26 avril 2025",
+     "style": "mirror"
+   },
    {                                                                   
      "img": "./assets/HashIBM.jpg",                                    
      "name": "HashIBM",
